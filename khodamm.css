@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bgcekkhodam.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -1; /* Ensure it stays behind other content */
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header{
+    text-align: center;
+}
+
+.search{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+#btn-search{
+    text-align: center;
+    border: none;
+  gap: 12px;
+  background: #fffeff;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+    padding: 10px 20px;
+    margin: 10px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 30px;
+}
+
+#btn-search:hover{
+    background: linear-gradient(0deg, #A47CF3, #683FEA);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+    0px 0px 180px 0px #9917FF;
+  transform: translateY(-2px);
+    background-color: #000;
+    color: white;
+}
+
+.hasil-khodam{
+    margin: 10px;
+    padding: 2px 10px;
+    color: white;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    text-shadow: rgb(0, 0, 0) 2px 2px;
+}
+
+p{
+    font-size: 1.2rem;
+}
